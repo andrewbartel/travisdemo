@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Travis Demo</title>
+
+    <style>
+        .padding-bottom-25 {
+            padding-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <form id="ninkasi-demo">
+
+        <div class="row padding-bottom-25">
+            <h3>Individual Beer Barrel Internal Cost</h3>
+            <button type="button" id="toggle-internal" data-hidden-state="false" data-related-wrapper="internal-wrapper" class="toggle btn btn-info">Hide Section</button>
+        </div>
+
+        <div id="internal-wrapper">
+
+            <div class="row">
+                <div class="col-sm-4 form-group">
+                    <label for="total-dom-internal">Total Domination IPA</label>
+                    <input type="text" class="form-control" value="162" id="total-dom-internal">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="tri-internal">Tricerahops</label>
+                    <input type="text" class="form-control" value="146" id="tri-internal">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="lux-internal">Lux</label>
+                    <input type="text" class="form-control" value="194.25" id="lux-internal">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 form-group">
+                    <label for="oatis-internal">Oatis</label>
+                    <input type="text" class="form-control" value="150" id="oatis-internal">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="v-oatis-internal">Vanilla Oatis</label>
+                    <input type="text" class="form-control" value="117" id="v-oatis-internal">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="quantum-internal">Quantum</label>
+                    <input type="text" class="form-control" value="199" id="quantum-internal">
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row padding-bottom-25">
+            <h3>Barrel Retail By Beer</h3>
+            <button type="button" id="toggle-retail" data-hidden-state="false" data-related-wrapper="retail-wrapper" class="toggle btn btn-info">Hide Section</button>
+        </div>
+
+        <div id="retail-wrapper">
+
+            <div class="row">
+                <h4>Total Domination IPA</h4>
+                <div class="col-sm-4 form-group">
+                    <label for="total-dom-full-barrel">Full Barrel</label>
+                    <input type="text" class="form-control" value="355" id="total-dom-full-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="total-dom-half-barrel">Half Barrel</label>
+                    <input type="text" class="form-control" value="180" id="total-dom-half-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="total-dom-quarter-barrel">Quarter Barrel</label>
+                    <input type="text" class="form-control" value="100" id="total-dom-quarter-barrel">
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Tricerahops</h4>
+                <div class="col-sm-4 form-group">
+                    <label for="tricerahops-full-barrel">Full Barrel</label>
+                    <input type="text" class="form-control" value="299" id="tricerahops-full-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="tricerahops-half-barrel">Half Barrel</label>
+                    <input type="text" class="form-control" value="175" id="tricerahops-half-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="tricerahops-quarter-barrel">Quarter Barrel</label>
+                    <input type="text" class="form-control" value="95" id="tricerahops-quarter-barrel">
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Lux</h4>
+                <div class="col-sm-4 form-group">
+                    <label for="lux-full-barrel">Full Barrel</label>
+                    <input type="text" class="form-control" value="450" id="lux-full-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="lux-half-barrel">Half Barrel</label>
+                    <input type="text" class="form-control" value="250" id="lux-half-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="lux-quarter-barrel">Quarter Barrel</label>
+                    <input type="text" class="form-control" value="150" id="lux-quarter-barrel">
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Oatis</h4>
+                <div class="col-sm-4 form-group">
+                    <label for="oatis-full-barrel">Full Barrel</label>
+                    <input type="text" class="form-control" value="400" id="oatis-full-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="oatis-half-barrel">Half Barrel</label>
+                    <input type="text" class="form-control" value="225" id="oatis-half-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="oatis-quarter-barrel">Quarter Barrel</label>
+                    <input type="text" class="form-control" value="125" id="oatis-quarter-barrel">
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Vanilla Oatis</h4>
+                <div class="col-sm-4 form-group">
+                    <label for="v-oatis-full-barrel">Full Barrel</label>
+                    <input type="text" class="form-control" value="162" id="v-oatis-full-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="v-oatis-half-barrel">Half Barrel</label>
+                    <input type="text" class="form-control" value="146" id="v-oatis-half-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="v-oatis-quarter-barrel">Quarter Barrel</label>
+                    <input type="text" class="form-control" value="194.25" id="v-oatis-quarter-barrel">
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Quantum</h4>
+                <div class="col-sm-4 form-group">
+                    <label for="quantum-full-barrel">Full Barrel</label>
+                    <input type="text" class="form-control" value="162" id="quantum-full-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="quantum-half-barrel">Half Barrel</label>
+                    <input type="text" class="form-control" value="146" id="quantum-half-barrel">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="quantum-quarter-barrel">Quarter Barrel</label>
+                    <input type="text" class="form-control" value="194.25" id="quantum-quarter-barrel">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="cost-calc-wrapper">
+
+            <div class="row">
+                <h3>Calculate Profit</h3>
+
+                <div class="col-sm-4 form-group">
+                    <label for="num-kegs">How many?</label>
+                    <input type="number" class="form-control" min="1" max="10000" value="1" id="num-kegs">
+                </div>
+
+                <div class="col-sm-4 form-group">
+                    <label for="size">What size?</label>
+                    <select id="size" class="form-control">
+                        <option value="quarter">Quarter Barrel</option>
+                        <option value="half">Half Barrel</option>
+                        <option value="full">Full Barrel</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-4 form-group">
+                    <label for="type-of-beer">Which Beer?</label>
+                    <select id="type-of-beer" class="form-control">
+                        <option value="total-dom">Total Domination IPA</option>
+                        <option value="tri">Tricerahops</option>
+                        <option value="lux">Lux</option>
+                        <option value="oatis">Oatis</option>
+                        <option value="v-oatis">Vanilla Oatis</option>
+                        <option value="quantum">Quantum</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row"><button type="button" id="calc-profit" class="btn btn-success">Calculate</button></div>
+
+            <hr>
+
+            <div id="profit-wrapper">
+                <label for="total-cost">Total Cost: </label>
+                <input type="text" readonly="readonly" id="total-cost">
+
+                <label for="total-sale">Total Sale: </label>
+                <input type="text" readonly="readonly" id="total-sale">
+
+                <label for="profit-gross">Gross Profit: </label>
+                <input type="text" readonly="readonly" id="profit-gross">
+
+                <label for="profit-percent">Gross Profit Percentage: </label>
+                <input type="text" readonly="readonly" id="profit-percent">
+            </div>
+
+        </div>
+        
+    </form>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+
+        $('.toggle').on('click', function() {
+            var sectionToToggle = $(this).attr('data-related-wrapper');
+            $('#' + sectionToToggle).slideToggle();
+
+            if ( $(this).attr('data-hidden-state') == 'false' ) {
+                $(this).attr('data-hidden-state', 'true').html('Show Section');
+            } else {
+                $(this).attr('data-hidden-state', 'false').html('Hide Section');
+            }
+        });
+
+        $('#calc-profit').on('click',function() {
+            var kegsSold = $('#num-kegs').val(),
+                typeKegs = $('#size').val(),
+                typeBeer = $('#type-of-beer').val();
+
+
+            // calculate internal cost
+            var finalInternalCost = 0;
+
+            var baseInternalCost = $('#' + typeBeer + '-internal').val() * kegsSold;
+            if( typeKegs == 'quarter') {
+                finalInternalCost = baseInternalCost / 4;
+            } else if(typeKegs == 'half') {
+                finalInternalCost = baseInternalCost / 2;
+            } else {
+                finalInternalCost = baseInternalCost;
+            }
+
+            $('#total-cost').val(finalInternalCost.toFixed(2));
+
+            // calculate total retail sale
+            var finalRetail = 0;
+            finalRetail = $('#' + typeBeer + '-' + typeKegs + '-barrel').val() * kegsSold;
+
+            $('#total-sale').val(finalRetail.toFixed(2));
+
+            // calculate profit
+            var totalProfit = finalRetail - finalInternalCost;
+            $('#profit-gross').val(totalProfit.toFixed(2));
+
+            // calculate profit perfect
+            var profitPercent = (totalProfit / finalRetail) * 100;
+            $('#profit-percent').val(profitPercent.toFixed(2) + '%');
+        })
+
+    });
+
+</script>
+
+</body>
+</html>
